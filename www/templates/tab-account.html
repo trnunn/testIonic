@@ -1,0 +1,14 @@
+<ion-view view-title="Testing">
+  <ion-content>
+    <ion-list>
+    <ion-toggle  ng-model="settings.testTime">
+        Test Time
+    </ion-toggle>
+    <div ng-show="settings.testTime">
+      <h3 >It's test time!<h3>
+      <p>Testing is good</p>
+    </div>
+    <p ng-show="!settings.testTime">You should consider testing</p>
+    </ion-list>
+  </ion-content>
+</ion-view>
